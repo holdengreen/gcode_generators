@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+	<p>Hi</p>
+	<script type="text/javascript">
+        function StringBuffer() {
+            this.__strings__ = new Array;
+        }
+ 
+        StringBuffer.prototype.append = function (str) {
+            this.__strings__.push(str);
+        };
+ 
+        StringBuffer.prototype.toString = function () {
+            return this.__strings__.join("");
+        };
+	</script>
+	
+	<script type="text/javascript" src="HGAnim_FanGenerator.js">
+		document.write("Hello?");
+	</script>
+</body>
